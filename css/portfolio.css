@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -85,7 +89,8 @@ p {
   left: 2vw;
   top: 35vh;
 }
-.phoneBg{
+
+.phoneBg {
   position: absolute;
   z-index: -5;
   width: 150%;
@@ -94,6 +99,7 @@ p {
   top: -10%;
   left: -10%;
 }
+
 .phone {
   height: 40vw;
   width: 22vw;
@@ -106,7 +112,7 @@ p {
 .phoneBtnContainer {
   width: 22vw;
   position: absolute;
-  margin:-4.8vw 0 0 -2vw;
+  margin: -4.8vw 0 0 -2vw;
   z-index: 5;
 }
 
@@ -115,4 +121,26 @@ p {
   width: 3vw;
   border-radius: 50%;
   background: grey;
+}
+
+/*CAROUSEL*/
+.carouselContainer{
+  margin-bottom: 50px;
+}
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -40px;
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+  background: #a3a3a3;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.blog .carousel-indicators .active {
+  background: #707070;
 }

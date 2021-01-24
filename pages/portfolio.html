@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/portfolio.css">
   <title></title>
 </head>
@@ -41,7 +42,7 @@
   <div class="screenMainContainer">
     <div class="container-fluid">
       <div class="row">
-        <iframe class="pc" src="../index.html" width="" height=""></iframe>
+        <iframe id="screenIframe" class="pc" src="../index.html" width="" height=""></iframe>
       </div>
       <p>Webee</p>
       <div class="row screenStand">
@@ -51,16 +52,101 @@
     </div>
   </div>
   <div class="phoneMainContainer container">
-    <iframe class="phone" src="../index.html" width="" height=""></iframe>
+    <iframe id="phoneIframe" class="phone" src="../index.html" width="" height=""></iframe>
     <div class="phoneBtnContainer row justify-content-center">
       <div class="phoneBtn"></div>
     </div>
-    <div class="phoneBg">
+    <div class="phoneBg"></div>
+  </div>
+  <!--CAROUSEL-->
+  <div class="container carouselContainer">
+    <div class="row blog">
+      <div class="col-md-12">
+        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
 
+          <ol class="carousel-indicators">
+            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#blogCarousel" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3">
+                  <a onclick="chooseTemplate(templates[0])">
+                    <img src="../media/img/about7.jpg" alt="Image" style="max-width:100%;">
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a onclick="chooseTemplate(templates[1])">
+                    <img src="../media/img/about7.jpg" alt="Image" style="max-width:100%;">
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a onclick="chooseTemplate(templates[2])">
+                    <img src="../media/img/about7.jpg" alt="Image" style="max-width:100%;">
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a onclick="chooseTemplate(templates[3])">
+                    <img src="../media/img/about7.jpg" alt="Image" style="max-width:100%;">
+                  </a>
+                </div>
+              </div>
+              <!--.row-->
+            </div>
+            <!--.item-->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3">
+                  <a onclick="chooseTemplate(templates[4])">
+                    <img src="../media/img/about7.jpg" alt="Image" style="max-width:100%;">
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a onclick="chooseTemplate(templates[5])">
+                    <img src="../media/img/about7.jpg" alt="Image" style="max-width:100%;">
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a onclick="chooseTemplate(templates[6])">
+                    <img src="../media/img/about7.jpg" alt="Image" style="max-width:100%;">
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a onclick="chooseTemplate(templates[7])">
+                    <img src="../media/img/about7.jpg" alt="Image" style="max-width:100%;">
+                  </a>
+                </div>
+              </div>
+              <!--.row-->
+            </div>
+            <!--.item-->
+          </div>
+          <!--.carousel-inner-->
+        </div>
+        <!--.Carousel-->
+      </div>
     </div>
   </div>
+  <!--FOOTER-->
+  <footer id="contactUs" class="container-fluid">
+    <div class="footerContent">
+      <h1>| Contact Us</h1>
+      <input type="text" name="" value="Your Mail">
+      <input type="text" name="" value="Your Message">
+    </div>
+    <div class="row justify-content-center copyrights">
+      <p> © Webee | Web Design Service </p>
+    </div>
+  </footer>
 </body>
 <footer>
+  <script src="../js/carousel.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
